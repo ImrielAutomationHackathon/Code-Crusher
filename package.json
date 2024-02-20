@@ -186,5 +186,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pooja",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImrielAutomationHackathon/Code-Crusher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ImrielAutomationHackathon/Code-Crusher/issues"
+  },
+  "homepage": "https://github.com/ImrielAutomationHackathon/Code-Crusher#readme"
 }

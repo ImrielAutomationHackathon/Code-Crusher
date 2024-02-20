@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "cypress": "^13.6.4"
+    "cypress": "^13.6.4",
+    "cypress-xpath": "^2.0.1"
   },
   "name": "automationcypress",
   "version": "1.0.0",

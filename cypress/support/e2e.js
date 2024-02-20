@@ -23,3 +23,5 @@ import './commands'
 // require('./commands')
 
 import "cypress-axe";
+require('cypress-xpath');
+

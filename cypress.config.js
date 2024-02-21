@@ -4,6 +4,7 @@ module.exports = eyesPlugin(defineConfig({
   // the e2e or component configuration
   e2e: {
     setupNodeEvents(on, config) {
-    }
+    },
+    testIsolation: false,
   }
 }))

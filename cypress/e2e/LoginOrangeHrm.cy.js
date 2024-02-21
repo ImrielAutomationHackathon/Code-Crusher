@@ -4,7 +4,6 @@ it('Logging into Orange Hrm', () => {
   
     var userPassword = cy.xpath('//input[@name="password"]').click().type('admin1234')
     cy.xpath('//button[@type="submit"]').click()
-    cy.wait(10000)
     if(userName !== 'Admin' || userPassword !== 'admin123')
     {
       describe('Play Music', () => {

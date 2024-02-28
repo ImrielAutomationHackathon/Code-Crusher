@@ -1,7 +1,9 @@
 {
   "devDependencies": {
+    "allure-commandline": "^2.27.0",
     "cypress": "^13.6.4",
-    "cypress-xpath": "^2.0.1"
+    "cypress-xpath": "^2.0.1",
+    "mocha-allure-reporter": "^1.4.0"
   },
   "name": "automationcypress",
   "version": "1.0.0",
@@ -184,9 +186,11 @@
     "yauzl": "^2.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser:chrome": "npx cypress run --browser=chrome --headed --spec cypress/e2e/*js --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report"
   },
-  "author": "Pooja",
+  "author": "Shital",
   "license": "ISC",
   "repository": {
     "type": "git",

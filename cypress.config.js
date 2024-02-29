@@ -1,6 +1,5 @@
 const { defineConfig } = require("cypress");
 const eyesPlugin = require("@applitools/eyes-cypress");
-const allureWriter = require()
 module.exports = eyesPlugin(
   defineConfig({
     // the e2e or component configuration
@@ -9,6 +8,13 @@ module.exports = eyesPlugin(
       setupNodeEvents(on, config) {},
       testIsolation: false,
       experimentalSessionAndOrigin: true
+    },
+    component: {
+      setupNodeEvents(on, config) {
+        const getCompareSnapshotsPlugin = require("cypress-image-diff-js/dist/plugin");
+
+        getCompareSnapshotsPlugin(on, config);
+      },
     },
   })
 );

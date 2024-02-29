@@ -30,28 +30,3 @@ https://www.npmjs.com/package/cypress-axe
 ## Pre-requisite
 
 - NodeJS
-
-## Test Scenarios
-## TC_01_AddEmployee_E2E
-This TC verifies the End to End Addition/Validation/Deletion of Employee, functionality of the Application.
-
-1. Login into the Application
-2. Add Employee
-3. Validate if the newly added employee's name is present in the Employee list or not.
-4. Delete the Employee and Check the Success Message.
-
-## TC_02_CreateVacancy_E2E
-This TC verifies the End to End Addition/Validation/Deletion of new Vacancy, functionality of the Application.
-
-1. Login into the Application
-2. Create new Vacancy
-3. Validate if the newly added Vacancy present in the Vacancy list or not.
-4. Delete the Vacancy and Check the Success Message.
-
-## TC_03_DirectorySearch
-This TC verfies the Search Directory feature of the Application
-
-1. Login into the Application
-2. On Directory Page, Filter the Employees with 'Job Title'.
-3. Check if a specfic employee is present in the list or not
-Application Snapshots

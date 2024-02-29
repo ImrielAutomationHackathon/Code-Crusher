@@ -1,3 +1,17 @@
+import DataGenerator from "../support/faker_test";
+
+var testdata;
+ 
+before(()=>{
+  cy.writeFile("cypress/fixtures/testdata.json",
+  DataGenerator.generatetestData()
+  );
+  cy.readFile("cypress/fixtures/testdata.json").then((data)=>{
+    testdata=data;
+  });
+});
+
+
 it('Adding Users', () => {
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
     cy.xpath('//input[@name="username"]').click().type('Admin')
@@ -18,7 +32,7 @@ it('Adding Users', () => {
   
     cy.get(':nth-child(1) > .oxd-main-menu-item > .oxd-text').click()
     cy.get('.orangehrm-header-container > .oxd-button').click()
-    cy.get(':nth-child(4) > .oxd-input-group > :nth-child(2) > .oxd-input').type(testdata.firstName)
+    cy.get(':nth-child(4) > .oxd-input-group > :nth-child(2) > .oxd-input').type(testdata.email)
     cy.get('.oxd-autocomplete-text-input > input').type("swaraj Vi")
     cy.xpath('//div[@role="listbox"]').contains("Swaraj Vitthaldas").click()
     cy.get('.oxd-select-text--after').eq(0).click()

@@ -23,6 +23,16 @@ This is a sample project for [opensource-demo.orangehrmlive.com](https://opensou
 
 https://www.npmjs.com/package/cypress-mochawesome-reporter
 
+## Steps to run Cypress Cloud Dashboard:
+- npx cypress open
+- Click on Login from Cypress Runner - login into Cypress Cloud account
+  ![image](https://github.com/ImrielAutomationHackathon/Code-Crusher/assets/160570326/b5674a8f-5db4-44d5-ae07-99d845c17d1d)
+
+
+## Steps to run Cypress Allure Report:
+- npm run browser:chrome
+- npm run report:allure
+  
 ## Test accessibility with axe-core
 
 https://www.npmjs.com/package/cypress-axe

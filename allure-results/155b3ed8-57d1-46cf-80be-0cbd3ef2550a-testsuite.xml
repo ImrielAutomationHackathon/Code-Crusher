@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1708665632384' stop='1708665634991'>
+    <name></name>
+    <title></title>
+    <test-cases>
+        <test-case start='1708665632392' status='broken' stop='1708665634316'>
+            <name>Logging into Orange Hrm</name>
+            <title>Logging into Orange Hrm</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.visit()` failed trying to load:
+                
+                https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+                
+                The response we received from your web server was:
+                
+                  > 500: Internal Server Error
+                
+                This was considered a failure because the status code was not `2xx`.
+                
+                If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`</message>
+                <stack-trace>CypressError: `cy.visit()` failed trying to load:
+                
+                https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+                
+                The response we received from your web server was:
+                
+                  > 500: Internal Server Error
+                
+                This was considered a failure because the status code was not `2xx`.
+                
+                If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+                    at &lt;unknown> (http://localhost:51723/__cypress/runner/cypress_runner.js:130958:76)
+                    at visitFailedByErr (http://localhost:51723/__cypress/runner/cypress_runner.js:130372:12)
+                    at &lt;unknown> (http://localhost:51723/__cypress/runner/cypress_runner.js:130941:13)
+                    at tryCatcher (http://localhost:51723/__cypress/runner/cypress_runner.js:1807:23)
+                    at Promise._settlePromiseFromHandler (http://localhost:51723/__cypress/runner/cypress_runner.js:1519:31)
+                    at Promise._settlePromise (http://localhost:51723/__cypress/runner/cypress_runner.js:1576:18)
+                    at Promise._settlePromise0 (http://localhost:51723/__cypress/runner/cypress_runner.js:1621:10)
+                    at Promise._settlePromises (http://localhost:51723/__cypress/runner/cypress_runner.js:1697:18)
+                    at _drainQueueStep (http://localhost:51723/__cypress/runner/cypress_runner.js:2407:12)
+                    at _drainQueue (http://localhost:51723/__cypress/runner/cypress_runner.js:2400:9)
+                    at Async._drainQueues (http://localhost:51723/__cypress/runner/cypress_runner.js:2416:5)
+                    at Async.drainQueues (http://localhost:51723/__cypress/runner/cypress_runner.js:2286:14)
+                From Your Spec Code:
+                    at Context.eval (webpack://automationcypress/./cypress/e2e/LoginOrangeHrm.cy.js:2:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

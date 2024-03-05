@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1709211907718' stop='1709211910368'>
+    <name>Assertions Explicit Assertions</name>
+    <title>Assertions Explicit Assertions</title>
+    <test-cases>
+        <test-case start='1709211907720' status='passed' stop='1709211907880'>
+            <name>expect - make an assertion about a specified subject</name>
+            <title>expect - make an assertion about a specified subject</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1709211907881' status='passed' stop='1709211908041'>
+            <name>pass your own callback function to should()</name>
+            <title>pass your own callback function to should()</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1709211908042' status='passed' stop='1709211908205'>
+            <name>finds element by class name regex</name>
+            <title>finds element by class name regex</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1709211908206' status='passed' stop='1709211908352'>
+            <name>can throw any error</name>
+            <title>can throw any error</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1709211908353' status='passed' stop='1709211908508'>
+            <name>matches unknown text between two elements</name>
+            <title>matches unknown text between two elements</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1709211908510' status='passed' stop='1709211908656'>
+            <name>assert - assert shape of an object</name>
+            <title>assert - assert shape of an object</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1709211908657' status='passed' stop='1709211910367'>
+            <name>retries the should callback until assertions pass</name>
+            <title>retries the should callback until assertions pass</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

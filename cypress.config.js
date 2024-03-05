@@ -1,6 +1,6 @@
 const { defineConfig } = require("cypress");
 const eyesPlugin = require("@applitools/eyes-cypress");
-const allureWriter = require()
+//const allureWriter = require()
 module.exports = eyesPlugin(
   defineConfig({
     // the e2e or component configuration
@@ -8,7 +8,7 @@ module.exports = eyesPlugin(
       projectId: "bb5cbi",
       setupNodeEvents(on, config) {},
       testIsolation: false,
-      experimentalSessionAndOrigin: true
+      experimentalSessionAndOrigin: true,
     },
   })
 );

@@ -12,6 +12,7 @@
   "dependencies": {
     "@applitools/eyes-cypress": "^3.41.0",
     "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
+    "@faker-js/faker": "^8.4.1",
     "aggregate-error": "^3.1.0",
     "ansi-colors": "^4.1.3",
     "ansi-escapes": "^4.3.2",
@@ -188,7 +189,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "browser:chrome": "npx cypress run --browser=chrome --headed --spec cypress/e2e/*js --reporter mocha-allure-reporter",
+    "browser:chrome": "npx cypress run --browser=chrome --headed cypress/e2e/advanced-examples/.js --reporter mocha-allure-reporter",
     "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
     "chrome-execution": "npx cypress run cypress/e2e/**/*.js --browser chrome --headed",
     "cypress-dashboard-run": "npx cypress run --browser chrome --headed --record --key 47fa69d9-e3cc-4613-b1ec-d26975ea839b"
